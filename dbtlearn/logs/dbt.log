@@ -82,3 +82,31 @@ Happy modeling!
 [0m11:15:21.792883 [debug] [MainThread]: Connection 'debug' was properly closed.
 [0m11:15:21.792883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D12E38770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D16892FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025D16C65520>]}
 [0m11:15:21.793888 [debug] [MainThread]: Flushing usage events
+[0m13:58:29.953895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7993E9C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7993C6E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B7993C770>]}
+
+
+============================== 13:58:29.957696 | 7699487c-8324-41b3-873a-35f04f16757b ==============================
+[0m13:58:29.957696 [info ] [MainThread]: Running with dbt=1.8.6
+[0m13:58:29.958696 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\pparasyn\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'invocation_command': 'dbt deps', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:58:29.959698 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\pparasyn\source\GITHUB - Pawel_Praca\dbtlearn_udemy\dbtlearn\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:58:29.960698 [debug] [MainThread]: Command `dbt deps` failed at 13:58:29.960698 after 0.13 seconds
+[0m13:58:29.961699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B798BDC40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B79AFA7E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018B79BEFFE0>]}
+[0m13:58:29.961699 [debug] [MainThread]: Flushing usage events
+[0m13:59:21.717394 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C0BB82F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0BE25D310>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0BFFCF170>]}
+
+
+============================== 13:59:21.721394 | 357b5cf1-864e-4dc3-9956-b5bc0e4b44e3 ==============================
+[0m13:59:21.721394 [info ] [MainThread]: Running with dbt=1.8.6
+[0m13:59:21.721899 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\pparasyn\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m13:59:21.721899 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path C:\Users\pparasyn\source\GITHUB - Pawel_Praca\dbtlearn_udemy\dbtlearn\dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m13:59:21.723282 [debug] [MainThread]: Command `dbt deps` failed at 13:59:21.723282 after 0.12 seconds
+[0m13:59:21.724741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0C0BB82F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0BFFECA40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C0BFE3A7E0>]}
+[0m13:59:21.725245 [debug] [MainThread]: Flushing usage events
