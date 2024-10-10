@@ -31,6 +31,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   dbtlearn:
-    +materialized: view
-  dim:
-    +materialized: table
+    +materialized: view # domyślnie wszystkie modele są widokami
+    dim:
+      +enabled: true
+      +materialized: table #modele z folderu dim sa tworzone jako tabele
+    src:
+      +enabled: true
+      +materialized: ephemeral # takich widoków nie będzie bo nie są potrzebne
+
+# Wartości domyślne
+vars:
+  user_name: "Default user - not set in comand line "
