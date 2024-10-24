@@ -26,6 +26,15 @@ models:
      - name: minimum_nights
        data_tests:
          - positive_value
+  - name: dim_hosts_cleaned3
+    schema: dwh
+    description: Tabela zawierająca gości z nowymi kolumnami
+    columns:
+      - name: HostID
+      - name: HostName
+      - name: Superhost
+      - name: CreateDate
+      - name: Update_Date
 
   - name: dim_listings_w_hosts
     description: Tabela zawiera dane lokali do wynajecia w powiazaniu z danymi gospodarzy
