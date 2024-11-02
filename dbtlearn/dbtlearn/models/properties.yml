@@ -59,3 +59,7 @@ models:
               max_value: 5000 # (Optional)  Max(price) nie może byc większa niż 5000
               config:
                 severity: warn
+  - name: stg_hosts
+    schema: reconciliation_prop
+    materialized: view # takich widoków nie będzie bo nie są potrzebne
+    description: Testowa table do budowania modelu w nowej schemie

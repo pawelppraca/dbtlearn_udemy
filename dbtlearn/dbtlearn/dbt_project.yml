@@ -38,6 +38,10 @@ models:
     src:
       +enabled: true
       +materialized: ephemeral # takich widoków nie będzie bo nie są potrzebne
+#    recon:
+#      +enabled: true
+#      +materialized: view # takich widoków nie będzie bo nie są potrzebne
+#      +schema: reconciliation_tst
 
 # Wartości domyślne
 vars:
