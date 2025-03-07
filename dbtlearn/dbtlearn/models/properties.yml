@@ -3,6 +3,8 @@ version: 2
 models:
   - name: dim_listings_cleaned
     description: Widok zawierający wyczyszczone dane miejsc do wynajęcia
+    config:
+      tags: ['dim1']
     columns:
      - name: listing_id
        data_tests:
@@ -38,6 +40,8 @@ models:
 
   - name: dim_listings_w_hosts
     description: Tabela zawiera dane lokali do wynajecia w powiazaniu z danymi gospodarzy
+    config:
+      tags: ['dim1']
     data_tests:
       - dbt_expectations.expect_table_row_count_to_equal_other_table:
           compare_model: source('airbnb', 'listings')
