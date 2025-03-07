@@ -6,3 +6,8 @@ Tags dla customer_id: {{ customer_tags }}
     {% set tags = get_column_tags(column_name) %}
     {{ return(tag in tags) }}
 {% endmacro %}
+
+
+{% if column_has_tag('customer_id', 'pii') %}
+    Kolumna zawiera tag 'pii'.
+{% endif %}
